@@ -1,6 +1,5 @@
 <section class="section-intro mb-3 mb-lg-5">
 	<div class="section-intro-mobile-bg">
-		<%- // partial('partial/navbar', {clas id: 'transparent'}) %>
 		<%- partial('partial/navbar') %>
 		<div class="jumbotron jumbotron-fluid jumbotron-blueberry">
 			<div class="container">
@@ -16,7 +15,7 @@
 				</div>
 				<div class="row pb-4 pb-lg-0 pb-xl-4">
 					<div class="col">
-							<a href="<%- site.data.jumbotron.button.href || "" %></a>" class="my-2 btn btn-lg btn-primary rounded-pill mr-2">
+							<a href="<%- site.data.jumbotron.button.href || "" %>" class="my-2 btn btn-lg btn-primary rounded-pill mr-2">
 								<%- site.data.jumbotron.button.text || "" %>
 							</a>
 							<br class="d-inline d-md-none"/>
@@ -72,12 +71,87 @@
 <section>
 	<!-- Автомобиль в вашем распоряжении -->
 	<%- partial('partial/heading', {heading: site.data.your_auto.heading}) %>
+	<div class="container">
+		<div class="row">	
+			<div class="col">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+						<% for (var i=0; i<site.data.your_auto.images.length -1; i++) { %>
+							<% if (i==0) { %>
+								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<% } %>
+							<li data-target="#carouselExampleIndicators" data-slide-to="<%- i %>"></li>				
+						<% } %>
+					</ol>
+					<div class="carousel-inner">
+						<% for (var i=0; i<site.data.your_auto.images.length; i++) { %>
+							<div class="carousel-item <%- i==0 ? 'active' : '' %>">
+								<img src="<%- site.data.your_auto.images[i].src %>" class="d-block w-100" alt="<%- site.data.your_auto.images[i].alt %>">
+							</div>
+						<% } %>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row justify-content-center">	
+			<div class="col-12">
+				<h3 class="text-center my-4 h4"><%- site.data.your_auto.car.model %></h3>
+			</div>
+			<div class="col-xs-12 col-md-9 col-lg-6">
+				<table class="table">
+					<tbody>
+						<% for (var item in site.data.your_auto.car.parameters) { %>
+							<tr>
+								<th scope="row"><%- site.data.your_auto.car.parameters[item].name %></th>
+								<td><%- site.data.your_auto.car.parameters[item].value %></td>
+							</tr>
+						<% } %>
+					</tbody>
+				  </table>
+			</div>
+		</div>
+	</div>
 </section>
 <section>
 	<!-- Как арендовать автомобиль? -->
 	<%- partial('partial/heading', {heading: site.data.how_to_rent.heading}) %>
+	<div class="container">
+		<ul class="row list-blueberry justify-content-center">
+			<% for (var item in site.data.how_to_rent.items) { %>
+				<li class="col-xs-12 col-md-6 my-2 mt-lg-3">	
+					<p class="font-size-21"><%- site.data.how_to_rent.items[item] %></p>
+				</li>
+			<% } %>
+		</ul>
+	</div>	
 </section>
 <section>
 	<!-- Ответы на вопросы -->
 	<%- partial('partial/heading', {heading: site.data.faq.heading}) %>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="card-columns">
+					<% for (var item in site.data.faq.items) { %>
+						<div class="card card-blueberry">
+							<div class="card-body">
+								<h3 class="card-title h5"><%- site.data.faq.items[item].title %></h3>
+								<p class="card-text"><%- site.data.faq.items[item].text %></p>
+							</div>
+						</div>
+					<% } %>		
+				</div>		
+			</div>
+		</div>
+	</div>
 </section>

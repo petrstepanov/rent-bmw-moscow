@@ -1,9 +1,7 @@
 <div class="container mt-4 mb-3">
   <div class="row justify-content-center">
     <div class="col-12 col-md-10 text-center hr-bmw">
-      <h2 <%- heading.id ? 'id="' + heading.id + '"' : '' %>>
-        <%- heading.text || "" %>
-      </h2>
+      <h2 <%- heading.id ? 'id="' + heading.id + '"' : '' %>><%- heading.text || "" %></h2>
       <% if(heading.subhead){ %>
         <p class="lead mt-4"><%- heading.subhead %></p>
       <% } %>

@@ -7832,27 +7832,6 @@ a {
   border: 0;
   margin-bottom: 1.75rem;
   overflow: hidden; }
-  .card-blueberry a.img-wrapper {
-    display: block;
-    overflow: hidden; }
-    .card-blueberry a.img-wrapper img {
-      -webkit-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out;
-      -o-object-fit: cover;
-         object-fit: cover;
-      -o-object-position: center center;
-         object-position: center center;
-      max-height: 12rem; }
-      .card-blueberry a.img-wrapper img.tall {
-        max-height: 16rem; }
-      @media (min-width: 576px) {
-        .card-blueberry a.img-wrapper img {
-          max-height: 10rem; }
-          .card-blueberry a.img-wrapper img.tall {
-            max-height: 14rem; } }
-    .card-blueberry a.img-wrapper:hover img {
-      -webkit-transform: scale(1.05);
-              transform: scale(1.05); }
   .card-blueberry .card-body {
     padding: 1.05rem; }
     @media (min-width: 576px) {
@@ -7860,41 +7839,6 @@ a {
         padding: 1.4rem; } }
   .card-blueberry .card-title {
     line-height: 1; }
-  .card-blueberry .card-title-price {
-    background-color: #dee2e6;
-    padding: 0.3rem 1.2rem 0.3rem 0.5rem;
-    border-top-left-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem;
-    border-top-right-radius: 0.1rem;
-    border-bottom-right-radius: 0.1rem;
-    position: relative;
-    white-space: nowrap;
-    font-family: "Roboto-Black", Helvetica, sans-serif; }
-    .card-blueberry .card-title-price:before {
-      content: "";
-      position: absolute;
-      right: -0.67rem;
-      top: 50%;
-      margin-top: -1rem;
-      border-style: solid;
-      border-color: transparent;
-      border-left-color: #dee2e6;
-      border-width: 1rem 0 1rem 0.7rem; }
-    .card-blueberry .card-title-price:after {
-      content: "";
-      position: absolute;
-      background-color: white;
-      top: 50%;
-      right: 0.2rem;
-      width: 0.4rem;
-      height: 0.4rem;
-      border-radius: 0.2rem;
-      margin-top: -0.2rem;
-      margin-left: -0.2rem; }
-    .card-blueberry .card-title-price sup {
-      font-size: 60%;
-      margin-left: 0.15rem;
-      border-bottom: 0.15rem solid #212B36; }
 
 .btn-blueberry {
   font-family: "Roboto-Black", Helvetica, sans-serif;
@@ -10823,6 +10767,30 @@ a {
 
 .section-hairline {
   border-bottom: 2px solid #f5f5f5; }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-columns {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-columns {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; } }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-columns {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3; } }
+
+@media (min-width: 1200px) {
+  .card-columns {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3; } }
 
 .orientation-container {
   display: -webkit-box;
