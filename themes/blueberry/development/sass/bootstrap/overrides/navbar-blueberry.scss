@@ -70,12 +70,8 @@ $nb-logo-size-biggest:  3rem;
 
     @include media-breakpoint-up(lg) {
       padding-top: 0;
-      align-items: center;
+      padding-bottom: 0;
     }
-    //
-    // @include media-breakpoint-up(md) {
-    //    align-items: center;
-    // }
   }
 
   .nav-item {
