@@ -1,0 +1,151 @@
+// Responsive typography
+html {
+  font-size: 14px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 15px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 16px;
+  }
+}
+
+// General
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+$roboto-font-path: '../fonts';
+@import "../../node_modules/roboto-fontface/css/roboto/sass/roboto-fontface-regular.scss";
+@import "../../node_modules/roboto-fontface/css/roboto/sass/roboto-fontface-black.scss";
+
+// // Font faces
+// @font-face {
+//     font-family: 'aristotelicasmallcaps-bold';
+//     src: url('/fonts/aristotelicasmallcaps-bold-webfont.woff2') format('woff2'),
+//          url('/fonts/aristotelicasmallcaps-bold-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'config_condensedbold';
+//   src: url('/fonts/configcondensed-bold-webfont.woff2') format('woff2'),
+//        url('/fonts/configcondensed-bold-webfont.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'sf_pro_textregular';
+//     src: url('/fonts/sf-pro-text-regular-webfont.woff2') format('woff2'),
+//          url('/fonts/sf-pro-text-regular-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'sf_pro_textbold';
+//     src: url('/fonts/sf-pro-text-bold-webfont.woff2') format('woff2'),
+//          url('/fonts/sf-pro-text-bold-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'letrista_script';
+//     src: url('/fonts/letristascript-webfont.woff2') format('woff2'),
+//          url('/fonts/letristascript-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+$font-display:    "Roboto-Black", Helvetica, sans-serif;
+$font-regular:    "Roboto-Regular", Helvetica, sans-serif;
+$font-bold:       "Roboto-Black", Helvetica, sans-serif;
+
+b, strong, .strong {
+  font-family: $font-bold;
+  font-weight: normal;
+}
+
+a {
+  transition: color .15s ease-in-out;
+
+  svg, svg * {
+    transition: fill .15s ease-in-out;
+    fill: $link-color;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    svg, svg * {
+      fill: $link-hover-color;
+    }
+  }
+}
+
+.btn-link:hover, .btn-link:focus, .btn-link.focus {
+  text-decoration: none;
+}
+
+.bar {
+  position: relative;
+  padding-bottom: 1rem;
+
+  &:after {
+    content: '';
+    width: 5rem;
+    height: 0.1875rem;
+    background: $blue;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.5rem;
+    bottom: 0;
+  }
+}
+
+// Font Sizes
+$font-size-9: 0.5625em;
+$font-size-12: 0.75em;
+$font-size-16: 1em;
+$font-size-21: 1.3125em;
+$font-size-28: 1.75em;
+$font-size-37: 2.3125em;
+$font-size-50: 3.125em;
+$font-size-67: 4.1875em;
+$font-size-89: 5.5625em;
+
+.font-size-9 {
+    font-size: $font-size-9;
+}
+.font-size-12 {
+    font-size: $font-size-12;
+}
+.font-size-16 {
+    font-size: $font-size-16;
+}
+.font-size-21 {
+    font-size: $font-size-21;
+}
+.font-size-28 {
+    font-size: $font-size-28;
+}
+.font-size-37 {
+    font-size: $font-size-37;
+}
+.font-size-50 {
+    font-size: $font-size-50;
+}
+.font-size-67 {
+    font-size: $font-size-67;
+}
+.font-size-89 {
+    font-size: $font-size-89;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}

@@ -1,0 +1,143 @@
+.orientation-container {
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(lg){
+    flex-direction: row;
+  }
+}
+
+.my-container {
+  @include make-container();
+}
+
+.sidebar-sticky {
+  // @include media-breakpoint-up(sm) {
+  //   padding-bottom: 6em;
+  // }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 7em;
+    position: sticky;
+    top: 0;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 9em;
+  }
+}
+
+#post-aside {
+  background-color: $indigo;
+
+  .featured-image {
+    // Calc in SASS https://stackoverflow.com/questions/17982111/sass-variable-in-css-calc-function
+    width: calc(100% + #{$grid-gutter-width});
+    margin-left: -($grid-gutter-width / 2);
+    margin-right: -($grid-gutter-width / 2);
+    margin-bottom: 1.75em;
+
+    @include media-breakpoint-up(sm){
+      margin: 1.75rem 0;
+      border-radius: $border-radius;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @include media-breakpoint-up(lg){
+      display: none;
+    }
+  }
+
+  .sticker-properties {
+    dt {
+      float: left;
+      clear: left;
+      font-family: $font-bold;
+      margin-bottom: 0.5rem;
+    }
+
+    dd {
+      float: right;
+      clear: right;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg){
+    box-shadow: inset -1px 0 0 0 darken($indigo, 5%);
+    width: 40%;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    position: relative;
+    // padding-top: 1px;
+    top: -1px;
+  }
+
+  @include media-breakpoint-up(xl){  
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+#post-content {
+  padding-top: 2em;
+
+  @include media-breakpoint-up(lg){
+    width: 60%;
+    // font-size: $font-size-21;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 3.75em;
+  }
+
+  .content-image {
+    width: 100%;
+    border-radius: $border-radius;
+    margin: 1em 0 1.75em 0;
+
+    &:first-of-type {
+      display: none;
+
+      @include media-breakpoint-up(lg){
+        display: inline;
+        // margin-left: -2.75em;
+        // margin-right: -2.75em;
+        // margin-top: -3.75em;        
+      }
+
+      // @include media-breakpoint-up(xl){
+      //   display: inline;
+      //   margin-left: -5.55em;
+      //   margin-right: -5.55em;
+      //   margin-top: 3.75em;        
+      // }
+    }
+  }
+
+  h2 {
+    margin-top: 2em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  blockquote {
+    font-size: $font-size-12;
+    margin-top: -3em;
+    margin-bottom: 2em;
+    background-color: $indigo;
+    padding: 1.5em 1em 1em 1em;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    br {
+      display: none;
+    }
+  }
+}

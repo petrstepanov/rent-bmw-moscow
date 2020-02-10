@@ -1,0 +1,35 @@
+<nav class="navbar navbar-blueberry navbar-expand-lg navbar-light fixed-top" id="navbar-spy" data-max-fixed-width="10000">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <% if (theme.logo){ %>
+        <img src="<%- theme.logo %>" class="logo-image" alt="Логотип аренда и выкуп БМВ в Москве и Московской Области">
+      <% } %>
+    </a>
+    <div class="flex-grow-1 text-right d-block d-lg-none">
+      <a href="<%- site.data.navbar.button.href %>" class="btn btn-link btn-blueberry px-0 mr-2 mr-md-3">
+        <!-- <span class="icon-sm mr-1"><%- partial('ionicons/ios-call.svg') %></span> -->
+        <%- site.data.navbar.button.text %>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <% if(config.snipcart){ %>  
+      <span class="d-md-none"><%-partial('partial/snipcart-cart-button') %></span>
+    <% } %>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <% for (var item in site.data.navbar.menu) { %>
+          <li class="nav-item">
+            <a class="nav-link <%- site.data.navbar.menu[item].class %>" href="<%- site.data.navbar.menu[item].href %>">
+              <% if (site.data.navbar.menu[item].icon) { %>
+                <span class="icon-sm mr-1"><%- partial(site.data.navbar.menu[item].icon) %></span>
+              <% } %>
+              <%- site.data.navbar.menu[item].text %>  
+            </a>
+          </li>          
+        <% } %>        
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,20 @@
+button:
+  text: "<span class='d-none d-sm-inline'>+7 </span>901 420-59-00"
+  href: "tel:+79014205900"
+menu:
+  - text: "Наши приемущества"
+    href: "#our-advantages"
+    class: "d-block d-lg-none"
+  - text: "Условия<span class='d-inline d-lg-none'> работы</span>"
+    href: "#work-conditions"
+    class: ""
+  - text: "Ваш автомобиль"
+    href: "#bmw-pictures"
+    class: ""
+  - text: "<span class='d-inline d-lg-none'>Ответы и вопросы </span><span class='d-none d-lg-inline'>F.A.Q.</span>"
+    href: "#questions-and-answers"
+    class: ""
+  - text: "+7 </span>901 420-59-00"
+    icon: ionicons/ios-call.svg
+    href: "tel:+79014205900"
+    class: "d-none d-lg-block nav-link-blue ml-4 pl-xl-5"      

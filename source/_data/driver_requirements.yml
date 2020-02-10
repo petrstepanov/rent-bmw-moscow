@@ -1,0 +1,8 @@
+heading: "Требования к водителю"
+items:
+- icon: /icons/driver.svg
+  text: "Сданы экзамены агрегаторов."
+- icon: /icons/licence.svg
+  text: "Гражданство Российская Федерация."
+- icon: /icons/steering-wheel.svg
+  text: "Водительский стаж от 7 лет."
