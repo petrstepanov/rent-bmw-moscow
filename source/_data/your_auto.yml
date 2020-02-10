@@ -1,5 +1,7 @@
-heading: "Автомобиль в вашем распоряжении"
-subhead: "Наши авто всегда в идеальном состоянии и готовы приступить к работе. Мы создали для вас такие условия, что <strong>Вы сможете по-настоящему комфортно работать</strong>."
+heading: 
+  text: "Автомобиль в вашем распоряжении"
+  subhead: "Наши авто всегда в идеальном состоянии и готовы приступить к работе. Мы создали для вас такие условия, что <strong>Вы сможете по-настоящему комфортно работать</strong>."
+  id: your-bmw-pictures
 images:
 - /images/5series/bmw-520d-na-prokat-moskva-oblast.jpg
 - /images/5series/arendovat-bmw-diesel-na-prokat-v-moskve.jpg

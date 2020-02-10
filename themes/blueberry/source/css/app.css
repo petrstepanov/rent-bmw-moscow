@@ -7636,18 +7636,25 @@ a {
 .btn-link:hover, .btn-link:focus, .btn-link.focus {
   text-decoration: none; }
 
-.bar {
+.hr-bmw {
   position: relative;
-  padding-bottom: 1rem; }
-  .bar:after {
+  padding-top: 3rem; }
+  .hr-bmw:before {
     content: '';
-    width: 5rem;
-    height: 0.1875rem;
-    background: #009ee6;
-    position: absolute;
+    top: 7px;
+    left: 5rem;
+    right: 5rem;
+    height: 2px;
+    background: #C4C4C4;
+    position: absolute; }
+  .hr-bmw:after {
+    content: url("/img/heading-mini-logo.svg");
+    top: 0;
     left: 50%;
-    margin-left: -2.5rem;
-    bottom: 0; }
+    width: 2rem;
+    height: 1rem;
+    margin-left: -1rem;
+    position: absolute; }
 
 .font-size-9 {
   font-size: 0.5625em; }
@@ -7738,7 +7745,7 @@ a {
     padding-right: 0; }
   .navbar-blueberry .navbar-nav {
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem; }
+    padding-bottom: 0.5rem; }
     @media (min-width: 992px) {
       .navbar-blueberry .navbar-nav {
         padding-top: 0;
@@ -11146,81 +11153,24 @@ footer {
 body {
   position: relative; }
 
-.widget-contact-form {
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 0.4rem;
-  padding: 1.4rem;
-  background-color: white; }
-
-.swatch {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 0.5rem;
-  margin-left: 0.66667rem;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); }
-  .swatch.white {
-    background-color: white; }
-  .swatch.lilac {
-    background-color: #b195c6; }
-  .swatch.yellow {
-    background-color: #ffdb00; }
-  .swatch.red {
-    background-color: #e44145; }
-  .swatch.blue {
-    background-color: #39b7ea; }
-  .swatch.mint {
-    background-color: #5ec4b7; }
-  .swatch.black {
-    background-color: #363433; }
-  .swatch.orange {
-    background-color: #ff8a47; }
-  .swatch.pink {
-    background-color: #f6a6bf; }
-  .swatch.silver {
-    width: 2rem;
-    background: -webkit-gradient(linear, left top, right top, from(white), to(#ececec));
-    background: linear-gradient(to right, white, #ececec); }
-  .swatch.gold {
-    width: 2rem;
-    background: -webkit-gradient(linear, left top, right top, from(#f9efc9), to(#dec67a));
-    background: linear-gradient(to right, #f9efc9, #dec67a); }
-  .swatch.holographic {
-    width: 2rem;
-    background: -webkit-gradient(linear, left top, right top, from(lightpink), to(lightblue));
-    background: linear-gradient(to right, lightpink, lightblue); }
-    .swatch.holographic.opal {
-      background: -webkit-gradient(linear, left top, right top, from(wheat), to(thistle));
-      background: linear-gradient(to right, wheat, thistle); }
-    .swatch.holographic.blue {
-      background: -webkit-gradient(linear, left top, right top, from(lightpink), to(lightblue));
-      background: linear-gradient(to right, lightpink, lightblue); }
-  .swatch.oil {
-    width: 2rem;
-    background: -webkit-gradient(linear, left top, right top, from(#C1C1C1), color-stop(#EB9AB0), color-stop(#F8ED69), color-stop(#5FE0F6), to(#C1C1C1));
-    background: linear-gradient(to right, #C1C1C1, #EB9AB0, #F8ED69, #5FE0F6, #C1C1C1); }
-
-.related-posts {
-  margin-top: 2rem;
-  list-style: none;
-  padding-left: 0; }
-
-.related-posts-item {
-  margin-bottom: 1rem; }
-
-.related-posts-link {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center; }
-
-.related-posts-thumb {
-  width: 4rem;
-  height: 4rem;
-  background-size: cover;
-  display: inline-block;
-  margin-right: 1rem;
-  border-radius: 2rem; }
+.list-blueberry {
+  padding: 0;
+  counter-reset: my-badass-counter; }
+  .list-blueberry li {
+    list-style-type: none;
+    position: relative; }
+    .list-blueberry li p {
+      padding-left: 5rem;
+      min-height: 3.5rem; }
+    .list-blueberry li:before {
+      content: counter(my-badass-counter) ".";
+      counter-increment: my-badass-counter;
+      position: absolute;
+      top: -1rem;
+      left: 15px;
+      font-size: 4.1875em;
+      font-family: "Roboto-Black", Helvetica, sans-serif;
+      opacity: 0.3; }
 
 #disqus_thread {
   position: relative; }

@@ -1,0 +1,16 @@
+heading: 
+  text: "Требования к водителю"
+  id: work-conditions
+items:
+- icon:
+    src: /img/icons/driver.svg
+    alt: "Иконка водитель такси"
+  text: "Вы сдали экзамены агрегаторов такси."
+- icon:
+    src: /img/icons/license.svg
+    alt: "Иконка водительские права"
+  text: "Вы гражданин Российской Федерации."
+- icon:
+    src: /img/icons/steering-wheel.svg
+    alt: "Иконка руль автомобиля"
+  text: "Ваш водительский стаж более 7 лет."

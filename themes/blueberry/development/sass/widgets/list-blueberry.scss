@@ -1,0 +1,25 @@
+.list-blueberry {
+    padding: 0;
+    counter-reset: my-badass-counter;
+
+    li {
+        list-style-type: none;
+        position: relative;
+
+        p {
+            padding-left: 5rem;
+            min-height: 3.5rem;
+        }
+
+        &:before {
+            content: counter(my-badass-counter) ".";
+            counter-increment: my-badass-counter;
+            position: absolute;
+            top: -1rem;
+            left: 15px;
+            font-size: $font-size-67;
+            font-family: $font-bold;
+            opacity: 0.3;
+        }
+    }
+}

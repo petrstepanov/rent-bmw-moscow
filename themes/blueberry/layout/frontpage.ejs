@@ -1,6 +1,6 @@
-<section class="section-intro">
+<section class="section-intro mb-3 mb-lg-5">
 	<div class="section-intro-mobile-bg">
-		<%- // partial('partial/navbar', {className: 'transparent'}) %>
+		<%- // partial('partial/navbar', {clas id: 'transparent'}) %>
 		<%- partial('partial/navbar') %>
 		<div class="jumbotron jumbotron-fluid jumbotron-blueberry">
 			<div class="container">
@@ -20,7 +20,7 @@
 								<%- site.data.jumbotron.button.text || "" %>
 							</a>
 							<br class="d-inline d-md-none"/>
-							<span class="ml-2 front-paragraph"><%- site.data.jumbotron.details || "" %></span>
+							<span class="front-paragraph"><%- site.data.jumbotron.details || "" %></span>
 						</div>
 					</div>
 				</div>
@@ -29,23 +29,55 @@
 		</div>
 	</div>
 </section>
-<section class="pt-2 pt-mb-4 pt-lg-4 pb-4">
-	<!-- Featured stickers -->
-	<%- partial('partial/heading', {title: 'Stickers for cars, trucks and SUVs', subtitle: 'Stickers come in a variety of colors. New designs are often in progress! Check our Stories on <a rel="me" target="_blank" href="https://www.instagram.com/bimmersticker.store/">Instagram</a> and subscribe for updates.', name: 'featured'}) %>
-</section>
 <section class="pb-4">
-	<!-- Bimmers only -->
-	<%- partial('partial/heading', {title: 'For bimmers only', subtitle: 'Stickers designed exclusively for BMW cars. Have a cool idea for a custom sticker? <a href="#contact">Contact us</a> and we will get back to you the same day.', name: 'bmw-special'}) %>
+	<!-- Зачем работать на такси в бизнес-классе? -->
+	<%- partial('partial/heading', {heading: site.data.why_work.heading}) %>
+	<div class="container">
+		<div class="row justify-content-center">
+			<% for (var item in site.data.why_work.items) { %>
+				<div class="col-xs-12 col-sm-6 col-lg-4 text-center mt-3">	
+					<img class="w-25" src="<%- site.data.why_work.items[item].icon.src %>" alt="<%- site.data.why_work.items[item].icon.alt %>" />
+					<p class="mt-3 px-md-3"><%- site.data.why_work.items[item].text %></p>
+				</div>
+			<% } %>
+		</div>
+	</div>
 </section>
-<section class="pb-4">
-	<!-- Social stickers -->
-	<%- partial('partial/heading', {title: 'Custom social name stickers', subtitle: 'Variety of stickers that boost your social profile.', name: 'social'}) %>
+<section>
+	<!-- Наши приемущества -->
+	<%- partial('partial/heading', {heading: site.data.our_advantages.heading}) %>
+	<div class="container">
+		<ul class="row list-blueberry">
+			<% for (var item in site.data.our_advantages.items) { %>
+				<li class="col-xs-12 col-md-6 my-2 mt-lg-3">	
+					<p class="font-size-21"><%- site.data.our_advantages.items[item] %></p>
+				</li>
+			<% } %>
+		</ul>
+	</div>
+<section>
+	<!-- Требования к водителю -->
+	<%- partial('partial/heading', {heading: site.data.requirements.heading}) %>
+	<div class="container">
+		<div class="row justify-content-center">
+			<% for (var item in site.data.requirements.items) { %>
+				<div class="col-xs-12 col-sm-6 col-lg-4 text-center mt-3">	
+					<img class="w-25" src="<%- site.data.requirements.items[item].icon.src %>" alt="<%- site.data.requirements.items[item].icon.alt %>" />
+					<p class="lead mt-3 px-md-3"><%- site.data.requirements.items[item].text %></p>
+				</div>
+			<% } %>
+		</div>
+	</div>	
 </section>
-<section class="pb-4">
-	<!-- Windshield banners -->
-	<%- partial('partial/heading', {title: 'Windshield banners', subtitle: 'A collection of windshield banners for project and show cars, stanced vehicles, jdm cars. Check out our <a href="/custom-windshield-banner-sun-strip/">windshield banner builder</a> for custom banners and sun strips.', name: 'banners'}) %>
+<section>
+	<!-- Автомобиль в вашем распоряжении -->
+	<%- partial('partial/heading', {heading: site.data.your_auto.heading}) %>
 </section>
-<section class="pb-4">
-	<!-- Windshield banners -->
-	<%- partial('partial/heading', {title: 'Stickers for BMW series', subtitle: 'Cannot find a your BMW series in the list? Go request one in the <a href="#contact">Contact Form</a> below. We will be back ASAP.', name: 'series'}) %>
+<section>
+	<!-- Как арендовать автомобиль? -->
+	<%- partial('partial/heading', {heading: site.data.how_to_rent.heading}) %>
+</section>
+<section>
+	<!-- Ответы на вопросы -->
+	<%- partial('partial/heading', {heading: site.data.faq.heading}) %>
 </section>

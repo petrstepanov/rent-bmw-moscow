@@ -91,19 +91,28 @@ a {
   text-decoration: none;
 }
 
-.bar {
+.hr-bmw {
   position: relative;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+
+  &:before {
+    content: '';
+    top: 7px;
+    left: 5rem;
+    right: 5rem;
+    height: 2px;
+    background: #C4C4C4;
+    position: absolute;
+  }
 
   &:after {
-    content: '';
-    width: 5rem;
-    height: 0.1875rem;
-    background: $blue;
-    position: absolute;
+    content: url('/img/heading-mini-logo.svg');
+    top: 0;
     left: 50%;
-    margin-left: -2.5rem;
-    bottom: 0;
+    width: 2rem;
+    height: 1rem;
+    margin-left: -1rem;
+    position: absolute;
   }
 }
 
