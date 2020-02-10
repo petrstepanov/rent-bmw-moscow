@@ -3,6 +3,6 @@ items:
 - icon: /icons/driver.svg
   text: "Сданы экзамены агрегаторов."
 - icon: /icons/licence.svg
-  text: "Гражданство Российская Федерация."
+  text: "Вы - гражданин РФ."
 - icon: /icons/steering-wheel.svg
   text: "Водительский стаж от 7 лет."
