@@ -149,3 +149,17 @@ $font-size-89: 5.5625em;
 .no-wrap {
   white-space: nowrap;
 }
+
+.display-4 {
+  line-height: 1;
+  font-size: $font-size-37;
+  letter-spacing: 0rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: ($font-size-37+$font-size-50)/2;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-50;
+  }
+}

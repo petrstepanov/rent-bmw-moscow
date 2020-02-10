@@ -7679,6 +7679,17 @@ a {
 .no-wrap {
   white-space: nowrap; }
 
+.display-4 {
+  line-height: 1;
+  font-size: 2.3125em;
+  letter-spacing: 0rem; }
+  @media (min-width: 768px) {
+    .display-4 {
+      font-size: 2.71875em; } }
+  @media (min-width: 768px) {
+    .display-4 {
+      font-size: 3.125em; } }
+
 .label, .label-blueberry, .snipcart-item-line__variants label {
   font-size: 0.75em;
   font-family: "Roboto-Black", Helvetica, sans-serif;
@@ -7788,20 +7799,19 @@ a {
   padding-bottom: 0;
   margin-bottom: 0; }
   .jumbotron-blueberry h1 {
-    font-family: "Roboto-Black", Helvetica, sans-serif;
     color: white;
     text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2); }
     @media (min-width: 992px) {
       .jumbotron-blueberry h1 {
         color: #212B36;
-        font-size: 3.5rem;
         text-shadow: none; } }
     @media (min-width: 1200px) {
       .jumbotron-blueberry h1 {
         color: #212B36; } }
   .jumbotron-blueberry .front-paragraph {
     color: white;
-    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2); }
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+    vertical-align: middle; }
     @media (min-width: 576px) {
       .jumbotron-blueberry .front-paragraph {
         font-size: 1.25rem; } }
@@ -7809,10 +7819,6 @@ a {
       .jumbotron-blueberry .front-paragraph {
         color: #6c757d;
         text-shadow: none; } }
-  @media (max-width: 991.98px) {
-    .jumbotron-blueberry.fix a {
-      color: white;
-      text-decoration: underline !important; } }
 
 .card-blueberry {
   box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
@@ -10789,12 +10795,9 @@ a {
     animation-iteration-count: 1 !important; } }
 
 .section-intro .section-intro-mobile-bg {
-  background-image: url(/img/bimmer-sticker-xs.jpg);
+  background-image: url(/img/bmw-arendovat-dlya-taxi-v-moskve-xs.jpg);
   background-size: cover;
   background-position: center 69%; }
-  @media (min-width: 768px) {
-    .section-intro .section-intro-mobile-bg {
-      background-image: url(/img/bimmer-sticker-md.jpg); } }
   @media (min-width: 992px) {
     .section-intro .section-intro-mobile-bg {
       background-color: transparent;
@@ -10802,8 +10805,8 @@ a {
 
 @media (min-width: 992px) {
   .section-intro {
-    background-image: url(/img/bimmer-sticker-lg.jpg);
-    background-size: 130%;
+    background-image: url(/img/bmw-arendovat-dlya-taxi-v-moskve-lg.jpg);
+    background-size: cover;
     background-position: center top;
     background-repeat: no-repeat; } }
 

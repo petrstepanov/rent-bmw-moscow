@@ -2,7 +2,7 @@ var $ = require('jquery');
 var bootstrap = require('bootstrap');
 var autosize = require('autosize');
 
-// var navbarFixer = require('./modules/navbar-fixer');
+var navbarFixer = require('./modules/navbar-fixer');
 var smoothScroll = require('./modules/smooth-scroll');
 var windshieldForm = require('./modules/windshield-form');
 var snipcartForm = require('./modules/snipcart-form');
@@ -17,7 +17,7 @@ var FormAjaxSubmit = require('./modules/form-ajax-submit');
 var IntegerInput = require('./modules/integer-input');
 
 $(document).ready(function(){
-  // navbarFixer.init(document.querySelector('.js--init-navbar-fixer'));
+  navbarFixer.init(document.querySelector('.js--init-navbar-fixer'));
   smoothScroll.init();
   windshieldForm.init(document.querySelector('.js--init-windshield-container'));
   snipcartForm.init(document.querySelector('.js--init-snipcart-form'));

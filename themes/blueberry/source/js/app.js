@@ -3,7 +3,7 @@ var $ = require('jquery');
 var bootstrap = require('bootstrap');
 var autosize = require('autosize');
 
-// var navbarFixer = require('./modules/navbar-fixer');
+var navbarFixer = require('./modules/navbar-fixer');
 var smoothScroll = require('./modules/smooth-scroll');
 var windshieldForm = require('./modules/windshield-form');
 var snipcartForm = require('./modules/snipcart-form');
@@ -18,7 +18,7 @@ var FormAjaxSubmit = require('./modules/form-ajax-submit');
 var IntegerInput = require('./modules/integer-input');
 
 $(document).ready(function(){
-  // navbarFixer.init(document.querySelector('.js--init-navbar-fixer'));
+  navbarFixer.init(document.querySelector('.js--init-navbar-fixer'));
   smoothScroll.init();
   windshieldForm.init(document.querySelector('.js--init-windshield-container'));
   snipcartForm.init(document.querySelector('.js--init-snipcart-form'));
@@ -50,7 +50,7 @@ $(document).ready(function(){
   $('[data-toggle="popover"]').popover();
 });
 
-},{"./modules/content-buy-button":2,"./modules/form-ajax-submit":4,"./modules/form-inside-dialog":5,"./modules/form-validation":6,"./modules/integer-input":8,"./modules/navbar-buy-button":9,"./modules/posts-filter":12,"./modules/smooth-scroll":13,"./modules/snipcart-form":14,"./modules/sticky-container":15,"./modules/swatches":16,"./modules/windshield-form":17,"autosize":18,"bootstrap":19,"jquery":20}],2:[function(require,module,exports){
+},{"./modules/content-buy-button":2,"./modules/form-ajax-submit":4,"./modules/form-inside-dialog":5,"./modules/form-validation":6,"./modules/integer-input":8,"./modules/navbar-buy-button":9,"./modules/navbar-fixer":10,"./modules/posts-filter":12,"./modules/smooth-scroll":13,"./modules/snipcart-form":14,"./modules/sticky-container":15,"./modules/swatches":16,"./modules/windshield-form":17,"autosize":18,"bootstrap":19,"jquery":20}],2:[function(require,module,exports){
 // Emit event when 'Buy' button on the post's page goes out of viewport
 
 var $ = require('jquery');
