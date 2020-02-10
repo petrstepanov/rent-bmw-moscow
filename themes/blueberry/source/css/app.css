@@ -7731,8 +7731,7 @@ a {
     @media (min-width: 992px) {
       .navbar-blueberry .navbar-nav {
         padding-top: 0;
-        -webkit-box-align: center;
-                align-items: center; } }
+        padding-bottom: 0; } }
   .navbar-blueberry .nav-item-for-cart {
     line-height: 2.875rem;
     padding-left: 2.5rem; }
