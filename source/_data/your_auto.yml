@@ -1,15 +1,17 @@
 heading: "Автомобиль в вашем распоряжении"
-subhead: "Наши авто всегда в идеальном состоянии и готовы приступить к работе. Мы создали для вас такие условия, что <strong>вы сможете по-настоящему много зарабатывать</strong>."
+subhead: "Наши авто всегда в идеальном состоянии и готовы приступить к работе. Мы создали для вас такие условия, что <strong>Вы сможете по-настоящему комфортно работать</strong>."
 images:
 - /images/5series/bmw-520d-na-prokat-moskva-oblast.jpg
 - /images/5series/arendovat-bmw-diesel-na-prokat-v-moskve.jpg
 - /images/5series/arenda-bmw-dlya-taxi-v-moskve-i-oblasti.jpg
 car:
-  name: "BMW 520d"
+  name: "BMW 520d в кузове G30"
   parameters:
     - name: "Расход топлива:"
       value: "6,5 л в городе, 5 л по трассе"
     - name: "Коробка передач:"
-      value: "Автоматическая"
+      value: "Автоматическая АКПП"
     - name: "Год выпуска"
       value: "2019-2020"
+    - name: "Комплектация"
+      value: "Business задний привод"
