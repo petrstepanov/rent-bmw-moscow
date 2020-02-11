@@ -18,3 +18,8 @@
   outline: none !important;
   box-shadow: none !important;
 }
+
+.animated.fastest {
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
+}

@@ -17,7 +17,7 @@ menu:
   - text: "Как арендовать автомобиль?"
     href: "#how-to-rent"
     class: "d-block d-lg-none"
-  - text: "<span class='d-inline d-lg-none'>Ответы и вопросы </span><span class='d-none d-lg-inline'>F.A.Q.</span>"
+  - text: "<span class='d-inline d-lg-none'>Ответы на вопросы </span><span class='d-none d-lg-inline'>F.A.Q.</span>"
     href: "#questions-and-answers"
     class: ""
   - text: "+7 </span>901 420-59-00"

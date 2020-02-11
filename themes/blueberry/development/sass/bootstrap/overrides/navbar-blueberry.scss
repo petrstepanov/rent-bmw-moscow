@@ -62,6 +62,15 @@ $nb-logo-size-biggest:  3rem;
     border-width: 0;
     padding-left: 0;
     padding-right: 0;
+
+    svg {
+      fill: $body-color;
+      transition: 250ms fill ease-out;
+    }
+
+    &:hover svg {
+      fill: $blue;
+    }
   }
 
   .navbar-nav {
@@ -102,6 +111,10 @@ $nb-logo-size-biggest:  3rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     padding-left: 4rem;
+
+    &.active {
+      color: $blue;
+    }
 
     &:last-child {
       .nav-link {

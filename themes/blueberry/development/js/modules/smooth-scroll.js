@@ -19,7 +19,7 @@ function _onLinkClicked(event){
   event.preventDefault();
   var $target = $(event.currentTarget.getAttribute('href'));
   if ($target.length){
-    var offset = $target.offset().top - 24;
+    var offset = $target.offset().top - 48;
     if (navbarFixer.isFixed()){
       offset -= navbarFixer.getNavbarHeight();
     }
