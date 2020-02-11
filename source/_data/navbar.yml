@@ -20,7 +20,7 @@ menu:
   - text: "<span class='d-inline d-lg-none'>Ответы на вопросы </span><span class='d-none d-lg-inline'>F.A.Q.</span>"
     href: "#questions-and-answers"
     class: ""
-  - text: "+7 </span>901 420-59-00"
+  - text: "+7 901 420-59-00"
     icon: ionicons/ios-call.svg
     href: "tel:+79014205900"
     class: "d-none d-lg-block nav-link-blue ml-lg-4 pl-lg-3 ml-xl-5 pl-xl-4"      
