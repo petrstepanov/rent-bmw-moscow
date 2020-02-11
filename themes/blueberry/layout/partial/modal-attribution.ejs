@@ -1,0 +1,29 @@
+<div class="modal fade js--init-form-inside-dialog" id="<%- site.data.attribution.modal_id %>" tabindex="-1" role="dialog" aria-labelledby="customizeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-blueberry" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title font-size-28" id="exampleModalLabel"><%- site.data.attribution.title %></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<!-- Begin Custom Request Form -->
+            <div class="modal-body">
+                <p><%- site.data.attribution.details %></p>
+                <ul class="pl-3">
+                    <% for (var item in site.data.attribution.items) { %>
+                        <li class="my-2">
+                            Иконки сделанные 
+                            <a href="<%- site.data.attribution.items[item].made_by.href %>" title="<%- site.data.attribution.items[item].made_by.title %>"><%- site.data.attribution.items[item].made_by.title %></a>
+                            можно скачать с сайта 
+                            <a href="<%- site.data.attribution.items[item].hosted.href %>" title="<%- site.data.attribution.items[item].hosted.title %>"><%- site.data.attribution.items[item].hosted.title %></a>.
+                        </li>
+                    <% } %>
+                </ul>             
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-blueberry" data-dismiss="modal">Закрыть</button>
+            </div>     
+		</div>
+	</div>
+</div>

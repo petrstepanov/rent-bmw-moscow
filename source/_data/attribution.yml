@@ -1,0 +1,17 @@
+button_caption: "Показать ссылки на использованные иконки"
+title: "Ссылки на использованные иконки"
+modal_id: attributionModal
+details: "На данном сайте использованы иконки, которые можно найти по следующим ссылкам. Мы благодарны их авторам за потраченное время и прекрасное качество графики!"
+items:
+  - made_by:
+      title: Freepik
+      href: https://www.flaticon.com/authors/freepik
+    hosted:
+      title: Flaticon
+      href: https://www.flaticon.com/
+  - made_by:
+      title: DinosoftLabs
+      href: https://www.flaticon.com/authors/dinosoftlabs
+    hosted:
+      title: Flaticon
+      href: https://www.flaticon.com/

@@ -1,34 +1,30 @@
 <footer>
   <img class="w-100" alt="footer section shape" src="<%- partial('../data-uri/wave-footer') %>" />
-  <div class="section-blue pt-4 pb-3">
+  <div class="section-gray pt-4 pb-3">
     <div class="container">
       <div class="row">
-        <nav class="col text-center mb-3 line-height-2">
-          <a class="text-white mx-3" href="/">All Stickers</a>
-          <a class="text-white mx-3" href="/custom-windshield-banner-sun-strip/">Custom Sun Strips and Banners</a>
-        </nav>
-        <nav class="col-12 text-center">
-          <!-- <a href="/about">About</a>
-          <a href="/how-to-apply">How to apply</a>
-          <a href="#">Image attributions</a> -->
-          <% if (theme.instagram_url){ %>
-            <a class="icon-lg mx-2" href="<%- theme.instagram_url %>" rel="me" target="_blank">
-              <%- partial('ionicons/logo-instagram.svg') %><span class="d-none">Instagram</span>
+        <div class="col-12 text-center">
+
+          <img class="logo-footer" src="/img/rent-bmw-for-cab-drivers-logo-flat.svg" alt="Логотип арендовать БМВ в Москве" />
+          <p class="lead text-white mt-2 mb-0"><strong><%- site.data.footer.text %></strong></p>
+          <p class="text-white-50"><%- site.data.footer.text_faded %></p>
+          <p class="mt-4">
+            <a href="<%- site.data.jumbotron.button.href || "" %>" class="my-2 btn btn-lg btn-primary rounded-pill mr-2">
+              <%- site.data.jumbotron.button.text || "" %>
             </a>
-          <% } %>
-          <% if (theme.facebook_url){ %>
-            <a class="icon-lg mx-2" href="<%- theme.twitter_url %>" rel="me" target="_blank">
-              <%- partial('ionicons/logo-twitter.svg') %><span class="d-none">Twitter</span>
-            </a>
-          <% } %>
-          <% if (theme.facebook_url){ %>
-            <a class="icon-lg mx-2" href="<%- theme.facebook_url %>" rel="me" target="_blank">
-              <%- partial('ionicons/logo-facebook.svg') %><span class="d-none">Facebook</span>
-            </a>
-          <% } %>
-        </nav>
-        <div class="col-12">
-          <p class="text-white-50 text-center mt-3 mb-2 font-size-12">Copyright © <%- new Date().getFullYear() %>, Bimmer Sticker Store. All Rights Reserved.</p>
+            <br />
+            <span class="text-white-50"><%- site.data.jumbotron.details || "" %></span>          
+          </p>
+        </div>
+        <div class="col-12 text-center">
+          <p class="text-white-50 mt-3 mb-2 font-size-12">
+            <% var currentYear = new Date().getFullYear() %>
+            <% var copyrightString = site.data.footer.copyright.replace('####', currentYear) %>
+            <%- copyrightString %>
+          </p>
+          <button type="button" class="btn btn-sm btn-link btn-blueberry" data-toggle='modal' data-target='#<%- site.data.attribution.modal_id %>'>
+            <%- site.data.attribution.button_caption %>
+          </button>
         </div>
       </div>
     </div>

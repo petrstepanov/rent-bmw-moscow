@@ -15,35 +15,10 @@
 }
 
 footer {
-  position: relative;
-  margin-top: -3em;
+  background-color: #3D3D3D;
 
-  @include media-breakpoint-up(sm) {
-    margin-top: -6em;
-  }
-
-  @include media-breakpoint-up(lg) {
-    margin-top: -7em;
-  }
-
-  @include media-breakpoint-up(xl) {
-    margin-top: -9em;
-  }
-
-  .section-blue {
-    background-color: $blue;
-  }
-
-  .logo-circ,
-  .logo-text {
-    height: $nb-logo-size;
-
-    @include media-breakpoint-up(sm) {
-      height: $nb-logo-size-bigger;
-    }
-    @include media-breakpoint-up(md) {
-      height: $nb-logo-size-biggest;
-    }
+  .logo-footer {
+    max-width: 5rem;
   }
 
   nav {
